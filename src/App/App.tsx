@@ -5,6 +5,8 @@ import { Nav } from 'App/Nav/Nav';
 
 // Models
 import { IAppProps } from 'App/App.types';
+import { MerchantListContainer } from 'App/Merchant/MerchantList/MerchantList.container';
+import { MerchantAddContainer } from 'App/Merchant/MerchantAdd/MerchantAdd.container';
 
 export class App extends Component<IAppProps> {
 
@@ -18,7 +20,8 @@ export class App extends Component<IAppProps> {
         <Nav />
         <main className="container py-4">
           <Switch>
-            <Route path="/" children={() => 'main'} />
+            <Route path="/" component={MerchantListContainer} />
+            <Route path="/add" component={MerchantAddContainer} />
           </Switch>
         </main>
       </Router>;

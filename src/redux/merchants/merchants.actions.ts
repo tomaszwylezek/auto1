@@ -1,5 +1,5 @@
 import { IAction } from 'model/common';
-import { GET_MERCHANTS } from 'redux/merchants/merchants.actionTypes';
+import { ADD_MERCHANT, GET_MERCHANTS } from 'redux/merchants/merchants.actionTypes';
 import { IMerchant } from 'model';
 
 export const getMerchants = (): IAction<IMerchant[]> => ({
@@ -49,4 +49,9 @@ export const getMerchants = (): IAction<IMerchant[]> => ({
       ]
     }
   ]
+});
+
+export const addMerchant = (merchant: IMerchant): IAction<IMerchant> => ({
+  type: ADD_MERCHANT,
+  payload: merchant
 });
