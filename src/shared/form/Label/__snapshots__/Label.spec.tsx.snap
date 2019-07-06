@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label component should renders correctly 1`] = `
+<label
+  className="foobar"
+  htmlFor="foo"
+>
+  foo
+</label>
+`;

@@ -2,17 +2,23 @@ import React, { FC } from 'react';
 import uuidv4 from 'uuid/v4';
 
 // Models
-import { IMerchantAddProps } from './MerchantAdd.types';
+import { IMerchantEditProps } from './MerchantEdit.types';
 
 import { IMerchantFormValues } from 'App/Merchant/MerchantForm/MerchantForm.types';
 import { MerchantFormContainer } from 'App/Merchant/MerchantForm/MerchantForm.container';
 
-export const MerchantAdd: FC<IMerchantAddProps> = ({ addMerchant, history: { push } }) => {
+export const MerchantEdit: FC<IMerchantEditProps> = ({ merchant, editMerchant, history: { push } }) => {
+  console.log({ merchant });
+
+  if (!merchant) {
+    return null;
+  }
   return (
     <MerchantFormContainer
+      merchant={merchant}
       onSubmit={(values: IMerchantFormValues) => {
         Promise.resolve(
-          addMerchant({
+          editMerchant({
             id: uuidv4(),
             bids: [],
             ...values

@@ -1,14 +1,10 @@
 import { IMerchant } from 'model';
+import { RouteComponentProps } from 'react-router';
 
 export interface IMerchantAddOwnProps {}
 
-export interface IMerchantAddConnectedState {}
-
 export interface IMerchantAddConnectedActions {
-  addMerchant: (merchant: IMerchant) => void
+  addMerchant: (merchant: IMerchant) => void;
 }
 
-export interface IMerchantAddProps extends IMerchantAddConnectedState, IMerchantAddConnectedActions, IMerchantAddOwnProps {}
-
-export interface IMerchantAddState {}
-
+export interface IMerchantAddProps extends RouteComponentProps, IMerchantAddConnectedActions, IMerchantAddOwnProps {}
