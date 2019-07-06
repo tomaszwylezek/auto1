@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav component should render correctly 1`] = `
+<nav
+  className="navbar navbar-light bg-light"
+>
+  <Link
+    className="navbar-brand"
+    to="#"
+  >
+    Auto1 - JS Coding test
+  </Link>
+</nav>
+`;
