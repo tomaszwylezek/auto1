@@ -1,3 +1,4 @@
+import * as Yup from 'yup';
 import { MerchantForm } from './MerchantForm';
 
 import { FormikBag, withFormik } from 'formik';
@@ -30,11 +31,19 @@ const getMerchantValues: (area: IMerchant) => IMerchantFormValues = ({
   hasPremium
 });
 
-export const MerchantFormContainer = compose(withFormik<IMerchantFormProps, IMerchantFormValues>({
-  displayName: 'MerchantFormContainer',
-  handleSubmit: (
-    values: IMerchantFormValues,
-    { props: { onSubmit } }: FormikBag<IMerchantFormProps, IMerchantFormValues>
-  ): void => onSubmit(values),
-  mapPropsToValues: ({ merchant }) => (merchant ? getMerchantValues(merchant) : initialFormValues)
-}))(MerchantForm);
+export const MerchantFormContainer = compose(
+  withFormik<IMerchantFormProps, IMerchantFormValues>({
+    displayName: 'MerchantFormContainer',
+    handleSubmit: (
+      values: IMerchantFormValues,
+      { props: { onSubmit } }: FormikBag<IMerchantFormProps, IMerchantFormValues>
+    ): void => onSubmit(values),
+    mapPropsToValues: ({ merchant }) => (merchant ? getMerchantValues(merchant) : initialFormValues),
+    validationSchema: () =>
+      Yup.object().shape<Partial<IMerchantFormValues>>({
+        firstname: Yup.string().required(),
+        lastname: Yup.string().required(),
+        email: Yup.string().email()
+      })
+  })
+)(MerchantForm);

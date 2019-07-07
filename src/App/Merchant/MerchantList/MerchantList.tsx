@@ -1,8 +1,10 @@
 import React, { FC, useState } from 'react';
+import classNames from 'classnames';
 import { IMerchantListProps } from 'App/Merchant/MerchantList/MerchantList.types';
 import { ButtonTheme, IMerchant } from 'model';
 import { Button } from 'shared/Button/Button';
 
+import styles from './MerchantList.module.scss';
 // Models
 
 const PER_PAGE: number = 5;
@@ -42,30 +44,29 @@ export const MerchantList: FC<IMerchantListProps> = ({ merchants, deleteMerchant
         }
       )}
       <nav className="d-flex justify-content-center">
-        <ul className="pagination">
+        <ul className={classNames('pagination', styles.pagination)}>
           <li className="page-item">
-            <a className="page-link" href="#" onClick={() => setPage(Math.max(page - 1, 1))}>
+            <span className="page-link" onClick={() => setPage(Math.max(page - 1, 1))}>
               Previous
-            </a>
+            </span>
           </li>
 
           {Array(Math.ceil(merchants.length / 5))
             .fill(0)
             .map((el, i) => (
               <li className="page-item" key={i}>
-                <a className="page-link" href="#" onClick={() => setPage(i + 1)}>
+                <span className="page-link" onClick={() => setPage(i + 1)}>
                   {i + 1}
-                </a>
+                </span>
               </li>
             ))}
           <li className="page-item">
-            <a
+            <span
               className="page-link"
-              href="#"
               onClick={() => setPage(Math.min(page + 1, Math.ceil(merchants.length / PER_PAGE)))}
             >
               Next
-            </a>
+            </span>
           </li>
         </ul>
       </nav>

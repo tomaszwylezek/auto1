@@ -13,6 +13,7 @@ export const Input: React.FC<IInputProps & FieldProps> = ({
   form: { touched, setFieldTouched },
   label,
   type = 'text',
+  required = false,
   className,
   placeholder,
   ...props
@@ -41,7 +42,12 @@ export const Input: React.FC<IInputProps & FieldProps> = ({
 
   return (
     <div className="form-group">
-      {!!label && <Label id={field.name}>{label}</Label>}
+      {!!label && (
+        <Label id={field.name}>
+          {label}
+          {required && <span className="text-danger"> *</span>}
+        </Label>
+      )}
       {input}
     </div>
   );

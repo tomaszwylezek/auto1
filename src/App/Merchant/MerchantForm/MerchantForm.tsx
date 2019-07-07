@@ -7,21 +7,25 @@ import { Button } from 'shared/Button/Button';
 
 // Models
 
-export const MerchantForm: FC<IMerchantFormProps & FormikProps<IMerchantFormValues>> = ({ merchant }) => {
+export const MerchantForm: FC<IMerchantFormProps & FormikProps<IMerchantFormValues>> = ({
+  merchant,
+  dirty,
+  isValid
+}) => {
   const isEdit: boolean = !!merchant;
   return (
     <Form className="row">
       <div className="col-12">
-        <Field component={Input} name="firstname" label="First name" />
+        <Field component={Input} required name="firstname" label="First name" />
       </div>
       <div className="col-12">
-        <Field component={Input} name="lastname" label="Last name" />
+        <Field component={Input} required name="lastname" label="Last name" />
+      </div>
+      <div className="col-12">
+        <Field component={Input} required name="email" label="Email" />
       </div>
       <div className="col-12">
         <Field component={Input} name="avatarUrl" label="Avatar Url" />
-      </div>
-      <div className="col-12">
-        <Field component={Input} name="email" label="Email" />
       </div>
       <div className="col-12">
         <Field component={Input} name="phone" label="Phone" />
@@ -30,7 +34,9 @@ export const MerchantForm: FC<IMerchantFormProps & FormikProps<IMerchantFormValu
         <Field component={Checkbox} name="hasPremium" label="Has premium" />
       </div>
       <div className="col-12">
-        <Button type="submit">{isEdit ? 'Edit' : 'Add'}</Button>
+        <Button disabled={!isValid || !dirty} type="submit">
+          {isEdit ? 'Edit' : 'Add'}
+        </Button>
       </div>
     </Form>
   );
