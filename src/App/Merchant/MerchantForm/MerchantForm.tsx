@@ -3,6 +3,7 @@ import { IMerchantFormProps, IMerchantFormValues } from 'App/Merchant/MerchantFo
 import { Field, Form, FormikProps } from 'formik';
 import { Input } from 'shared/form/Input/Input';
 import { Checkbox } from 'shared/form/Checkbox/Checkbox';
+import { Button } from 'shared/Button/Button';
 
 // Models
 
@@ -29,8 +30,7 @@ export const MerchantForm: FC<IMerchantFormProps & FormikProps<IMerchantFormValu
         <Field component={Checkbox} name="hasPremium" label="Has premium" />
       </div>
       <div className="col-12">
-        <button type="submit">XD</button>
-        {isEdit && <button type="submit">usun</button>}
+        <Button type="submit">{isEdit ? 'Edit' : 'Add'}</Button>
       </div>
     </Form>
   );

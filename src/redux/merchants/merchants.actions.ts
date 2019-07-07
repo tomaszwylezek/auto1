@@ -30,9 +30,161 @@ export const getMerchants = (): IAction<IMerchant[]> => ({
         }
       ]
     },
-
     {
       id: '2',
+      firstname: 'Grzegorz',
+      lastname: 'Wylezek',
+      avatarUrl: '',
+      email: 'xyz2@gmail.com',
+      phone: '665-555-555',
+      hasPremium: true,
+      bids: [
+        {
+          id: '3',
+          amount: 12,
+          carTitle: 'Toyota',
+          created: new Date('Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)').toString()
+        }
+      ]
+    },
+    {
+      id: '3',
+      firstname: 'Grzegorz',
+      lastname: 'Wylezek',
+      avatarUrl: '',
+      email: 'xyz2@gmail.com',
+      phone: '665-555-555',
+      hasPremium: true,
+      bids: [
+        {
+          id: '3',
+          amount: 12,
+          carTitle: 'Toyota',
+          created: new Date('Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)').toString()
+        }
+      ]
+    },
+    {
+      id: '4',
+      firstname: 'Grzegorz',
+      lastname: 'Wylezek',
+      avatarUrl: '',
+      email: 'xyz2@gmail.com',
+      phone: '665-555-555',
+      hasPremium: true,
+      bids: [
+        {
+          id: '3',
+          amount: 12,
+          carTitle: 'Toyota',
+          created: new Date('Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)').toString()
+        }
+      ]
+    },
+    {
+      id: '5',
+      firstname: 'Grzegorz',
+      lastname: 'Wylezek',
+      avatarUrl: '',
+      email: 'xyz2@gmail.com',
+      phone: '665-555-555',
+      hasPremium: true,
+      bids: [
+        {
+          id: '3',
+          amount: 12,
+          carTitle: 'Toyota',
+          created: new Date('Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)').toString()
+        }
+      ]
+    },
+    {
+      id: '6',
+      firstname: 'Grzegorz',
+      lastname: 'Wylezek',
+      avatarUrl: '',
+      email: 'xyz2@gmail.com',
+      phone: '665-555-555',
+      hasPremium: true,
+      bids: [
+        {
+          id: '3',
+          amount: 12,
+          carTitle: 'Toyota',
+          created: new Date('Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)').toString()
+        }
+      ]
+    },
+    {
+      id: '7',
+      firstname: 'Grzegorz',
+      lastname: 'Wylezek',
+      avatarUrl: '',
+      email: 'xyz2@gmail.com',
+      phone: '665-555-555',
+      hasPremium: true,
+      bids: [
+        {
+          id: '3',
+          amount: 12,
+          carTitle: 'Toyota',
+          created: new Date('Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)').toString()
+        }
+      ]
+    },
+    {
+      id: '8',
+      firstname: 'Grzegorz',
+      lastname: 'Wylezek',
+      avatarUrl: '',
+      email: 'xyz2@gmail.com',
+      phone: '665-555-555',
+      hasPremium: true,
+      bids: [
+        {
+          id: '3',
+          amount: 12,
+          carTitle: 'Toyota',
+          created: new Date('Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)').toString()
+        }
+      ]
+    },
+    {
+      id: '9',
+      firstname: 'Grzegorz',
+      lastname: 'Wylezek',
+      avatarUrl: '',
+      email: 'xyz2@gmail.com',
+      phone: '665-555-555',
+      hasPremium: true,
+      bids: [
+        {
+          id: '3',
+          amount: 12,
+          carTitle: 'Toyota',
+          created: new Date('Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)').toString()
+        }
+      ]
+    },
+    {
+      id: '4322',
+      firstname: 'Grzegorz',
+      lastname: 'Wylezek',
+      avatarUrl: '',
+      email: 'xyz2@gmail.com',
+      phone: '665-555-555',
+      hasPremium: true,
+      bids: [
+        {
+          id: '3',
+          amount: 12,
+          carTitle: 'Toyota',
+          created: new Date('Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)').toString()
+        }
+      ]
+    },
+    {
+      id: '2432432',
       firstname: 'Grzegorz',
       lastname: 'Wylezek',
       avatarUrl: '',

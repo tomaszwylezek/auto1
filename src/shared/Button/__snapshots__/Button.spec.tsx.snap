@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component should renders Link 1`] = `
+<Link
+  className="btn btn-primary button primary"
+  to="/foo"
+>
+  Anything
+</Link>
+`;
+
+exports[`Button component should renders basic component 1`] = `
+<button
+  className="btn btn-primary button primary"
+  type="button"
+>
+  Anything
+</button>
+`;
+
+exports[`Button component should renders with loading 1`] = `
+<button
+  className="btn btn-primary button primary loading"
+  disabled={true}
+  type="button"
+>
+  Anything
+</button>
+`;

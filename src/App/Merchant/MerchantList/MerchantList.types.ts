@@ -6,7 +6,9 @@ export interface IMerchantListConnectedState {
   merchants: IMerchant[];
 }
 
-export interface IMerchantListConnectedActions {}
+export interface IMerchantListConnectedActions {
+  deleteMerchant: (id: string) => void;
+}
 
 export interface IMerchantListProps
   extends IMerchantListConnectedState,

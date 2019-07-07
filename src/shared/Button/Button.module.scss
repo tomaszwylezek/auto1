@@ -1,0 +1,16 @@
+.button {
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled,
+  &[disabled] {
+    cursor: not-allowed;
+  }
+}
+
+.link {
+  &:hover {
+    text-decoration: none;
+  }
+}
