@@ -1,8 +1,10 @@
 import React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 
-import { getMockedField, getMockedFormikConfig } from 'testUtils/formik';
 import { Input } from './Input';
+
+// Config
+import { getMockedField, getMockedFormikConfig } from 'testUtils/formik';
 
 // Models
 import { FieldProps } from 'formik';
@@ -19,7 +21,7 @@ describe('Input component should', (): void => {
       form: getMockedFormikConfig()
     };
 
-    component = shallow(<Input {...props} />).dive();
+    component = shallow(<Input {...props} />);
   });
 
   it('renders correctly', (): void => {

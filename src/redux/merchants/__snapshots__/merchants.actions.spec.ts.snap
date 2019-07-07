@@ -1,6 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Merchants actions calls getMerchants 1`] = `
+exports[`Merchants actions should match snapshot for addMerchant action 1`] = `
+Object {
+  "payload": Object {
+    "avatarUrl": "",
+    "bids": Array [],
+    "email": "xyz",
+    "firstname": "bar",
+    "hasPremium": true,
+    "id": "123",
+    "lastname": "foo",
+    "phone": "123",
+  },
+  "type": "merchants/ADD_MERCHANT",
+}
+`;
+
+exports[`Merchants actions should match snapshot for deleteMerchant action 1`] = `
+Object {
+  "payload": "123",
+  "type": "merchants/DELETE_MERCHANT",
+}
+`;
+
+exports[`Merchants actions should match snapshot for editMerchant action 1`] = `
+Object {
+  "payload": Object {
+    "avatarUrl": "",
+    "bids": Array [],
+    "email": "xyz",
+    "firstname": "bar",
+    "hasPremium": true,
+    "id": "123",
+    "lastname": "foo",
+    "phone": "123",
+  },
+  "type": "merchants/EDIT_MERCHANT",
+}
+`;
+
+exports[`Merchants actions should match snapshot for getMerchants action 1`] = `
 Object {
   "payload": Array [
     Object {
@@ -40,6 +79,159 @@ Object {
       "firstname": "Grzegorz",
       "hasPremium": true,
       "id": "2",
+      "lastname": "Wylezek",
+      "phone": "665-555-555",
+    },
+    Object {
+      "avatarUrl": "",
+      "bids": Array [
+        Object {
+          "amount": 12,
+          "carTitle": "Toyota",
+          "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+          "id": "3",
+        },
+      ],
+      "email": "xyz2@gmail.com",
+      "firstname": "Grzegorz",
+      "hasPremium": true,
+      "id": "3",
+      "lastname": "Wylezek",
+      "phone": "665-555-555",
+    },
+    Object {
+      "avatarUrl": "",
+      "bids": Array [
+        Object {
+          "amount": 12,
+          "carTitle": "Toyota",
+          "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+          "id": "3",
+        },
+      ],
+      "email": "xyz2@gmail.com",
+      "firstname": "Grzegorz",
+      "hasPremium": true,
+      "id": "4",
+      "lastname": "Wylezek",
+      "phone": "665-555-555",
+    },
+    Object {
+      "avatarUrl": "",
+      "bids": Array [
+        Object {
+          "amount": 12,
+          "carTitle": "Toyota",
+          "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+          "id": "3",
+        },
+      ],
+      "email": "xyz2@gmail.com",
+      "firstname": "Grzegorz",
+      "hasPremium": true,
+      "id": "5",
+      "lastname": "Wylezek",
+      "phone": "665-555-555",
+    },
+    Object {
+      "avatarUrl": "",
+      "bids": Array [
+        Object {
+          "amount": 12,
+          "carTitle": "Toyota",
+          "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+          "id": "3",
+        },
+      ],
+      "email": "xyz2@gmail.com",
+      "firstname": "Grzegorz",
+      "hasPremium": true,
+      "id": "6",
+      "lastname": "Wylezek",
+      "phone": "665-555-555",
+    },
+    Object {
+      "avatarUrl": "",
+      "bids": Array [
+        Object {
+          "amount": 12,
+          "carTitle": "Toyota",
+          "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+          "id": "3",
+        },
+      ],
+      "email": "xyz2@gmail.com",
+      "firstname": "Grzegorz",
+      "hasPremium": true,
+      "id": "7",
+      "lastname": "Wylezek",
+      "phone": "665-555-555",
+    },
+    Object {
+      "avatarUrl": "",
+      "bids": Array [
+        Object {
+          "amount": 12,
+          "carTitle": "Toyota",
+          "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+          "id": "3",
+        },
+      ],
+      "email": "xyz2@gmail.com",
+      "firstname": "Grzegorz",
+      "hasPremium": true,
+      "id": "8",
+      "lastname": "Wylezek",
+      "phone": "665-555-555",
+    },
+    Object {
+      "avatarUrl": "",
+      "bids": Array [
+        Object {
+          "amount": 12,
+          "carTitle": "Toyota",
+          "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+          "id": "3",
+        },
+      ],
+      "email": "xyz2@gmail.com",
+      "firstname": "Grzegorz",
+      "hasPremium": true,
+      "id": "9",
+      "lastname": "Wylezek",
+      "phone": "665-555-555",
+    },
+    Object {
+      "avatarUrl": "",
+      "bids": Array [
+        Object {
+          "amount": 12,
+          "carTitle": "Toyota",
+          "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+          "id": "3",
+        },
+      ],
+      "email": "xyz2@gmail.com",
+      "firstname": "Grzegorz",
+      "hasPremium": true,
+      "id": "4322",
+      "lastname": "Wylezek",
+      "phone": "665-555-555",
+    },
+    Object {
+      "avatarUrl": "",
+      "bids": Array [
+        Object {
+          "amount": 12,
+          "carTitle": "Toyota",
+          "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+          "id": "3",
+        },
+      ],
+      "email": "xyz2@gmail.com",
+      "firstname": "Grzegorz",
+      "hasPremium": true,
+      "id": "2432432",
       "lastname": "Wylezek",
       "phone": "665-555-555",
     },

@@ -3,10 +3,12 @@ import { shallow, ShallowWrapper } from 'enzyme';
 
 import { Checkbox } from './Checkbox';
 
-// Models
-import { ICheckboxProps } from './Checkbox.types';
+// Config
 import { getMockedField, getMockedFormikConfig } from 'testUtils/formik';
+
+// Models
 import { FieldProps } from 'formik';
+import { ICheckboxProps } from './Checkbox.types';
 
 describe('Checkbox component should', (): void => {
   let props: ICheckboxProps & FieldProps;
@@ -23,17 +25,6 @@ describe('Checkbox component should', (): void => {
   });
 
   it('renders correctly', (): void => {
-    expect(component).toMatchSnapshot();
-  });
-
-  it('renders invalid message', (): void => {
-    component.setProps({
-      form: getMockedFormikConfig({
-        touched: { foo: true },
-        errors: { foo: 'core.error' }
-      })
-    });
-
     expect(component).toMatchSnapshot();
   });
 });

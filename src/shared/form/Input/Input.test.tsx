@@ -1,8 +1,10 @@
 import React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 
-import { getMockedFormikConfig, getMockedField } from 'testUtils/formik';
 import { Input } from './Input';
+
+// Config
+import { getMockedFormikConfig, getMockedField } from 'testUtils/formik';
 
 // Models
 import { FieldProps } from 'formik';
@@ -16,11 +18,10 @@ describe('Input component should', (): void => {
     props = {
       label: 'bar',
       field: getMockedField({ name: 'foo' }),
-      form: getMockedFormikConfig(),
-      onChanged: jest.fn()
+      form: getMockedFormikConfig()
     };
 
-    component = shallow(<Input {...props} />).dive();
+    component = shallow(<Input {...props} />);
   });
 
   it('react on change', (): void => {
@@ -28,6 +29,5 @@ describe('Input component should', (): void => {
 
     expect(props.field.onChange).toHaveBeenCalledWith({});
     expect(props.form.setFieldTouched).toHaveBeenCalledWith('foo', true, true);
-    expect(props.onChanged).toHaveBeenCalledWith({});
   });
 });

@@ -2,9 +2,10 @@ import React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 
 import { Button } from './Button';
+
 // Models
-import { IButtonProps } from './Button.types';
 import { ButtonTheme } from 'model';
+import { IButtonProps } from './Button.types';
 
 describe('Button component should', (): void => {
   it('renders basic component', (): void => {

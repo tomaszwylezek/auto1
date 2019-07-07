@@ -1,3 +1,247 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Merchants reducer initialize 1`] = `Array []`;
+exports[`Merchants reducer should initialize 1`] = `Array []`;
+
+exports[`Merchants reducer should react on ADD_MERCHANT action 1`] = `
+Array [
+  Object {
+    "avatarUrl": "",
+    "bids": Array [
+      Object {
+        "amount": 12,
+        "carTitle": "Toyota",
+        "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+        "id": "3",
+      },
+    ],
+    "email": "xyz2@gmail.com",
+    "firstname": "Grzegorz",
+    "hasPremium": true,
+    "id": "2",
+    "lastname": "Wylezek",
+    "phone": "665-555-555",
+  },
+]
+`;
+
+exports[`Merchants reducer should react on DELETE_MERCHANT action 1`] = `Array []`;
+
+exports[`Merchants reducer should react on EDIT_MERCHANT action 1`] = `
+Array [
+  Object {
+    "avatarUrl": "",
+    "bids": Array [
+      Object {
+        "amount": 12,
+        "carTitle": "Toyota",
+        "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+        "id": "3",
+      },
+    ],
+    "email": "xyz2@gmail.com",
+    "firstname": "Tomasz",
+    "hasPremium": true,
+    "id": "2",
+    "lastname": "Wylezek",
+    "phone": "665-555-555",
+  },
+]
+`;
+
+exports[`Merchants reducer should react on GET_MERCHANTS action 1`] = `
+Array [
+  Object {
+    "avatarUrl": "",
+    "bids": Array [
+      Object {
+        "amount": 12,
+        "carTitle": "Subaru",
+        "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+        "id": "1",
+      },
+      Object {
+        "amount": 15,
+        "carTitle": "Subaru",
+        "created": "Sat Jul 06 2019 10:32:04 GMT+0200 (Central European Summer Time)",
+        "id": "2",
+      },
+    ],
+    "email": "xyz@gmail.com",
+    "firstname": "Tomasz",
+    "hasPremium": true,
+    "id": "1",
+    "lastname": "Wylezek",
+    "phone": "555-555-555",
+  },
+  Object {
+    "avatarUrl": "",
+    "bids": Array [
+      Object {
+        "amount": 12,
+        "carTitle": "Toyota",
+        "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+        "id": "3",
+      },
+    ],
+    "email": "xyz2@gmail.com",
+    "firstname": "Grzegorz",
+    "hasPremium": true,
+    "id": "2",
+    "lastname": "Wylezek",
+    "phone": "665-555-555",
+  },
+  Object {
+    "avatarUrl": "",
+    "bids": Array [
+      Object {
+        "amount": 12,
+        "carTitle": "Toyota",
+        "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+        "id": "3",
+      },
+    ],
+    "email": "xyz2@gmail.com",
+    "firstname": "Grzegorz",
+    "hasPremium": true,
+    "id": "3",
+    "lastname": "Wylezek",
+    "phone": "665-555-555",
+  },
+  Object {
+    "avatarUrl": "",
+    "bids": Array [
+      Object {
+        "amount": 12,
+        "carTitle": "Toyota",
+        "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+        "id": "3",
+      },
+    ],
+    "email": "xyz2@gmail.com",
+    "firstname": "Grzegorz",
+    "hasPremium": true,
+    "id": "4",
+    "lastname": "Wylezek",
+    "phone": "665-555-555",
+  },
+  Object {
+    "avatarUrl": "",
+    "bids": Array [
+      Object {
+        "amount": 12,
+        "carTitle": "Toyota",
+        "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+        "id": "3",
+      },
+    ],
+    "email": "xyz2@gmail.com",
+    "firstname": "Grzegorz",
+    "hasPremium": true,
+    "id": "5",
+    "lastname": "Wylezek",
+    "phone": "665-555-555",
+  },
+  Object {
+    "avatarUrl": "",
+    "bids": Array [
+      Object {
+        "amount": 12,
+        "carTitle": "Toyota",
+        "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+        "id": "3",
+      },
+    ],
+    "email": "xyz2@gmail.com",
+    "firstname": "Grzegorz",
+    "hasPremium": true,
+    "id": "6",
+    "lastname": "Wylezek",
+    "phone": "665-555-555",
+  },
+  Object {
+    "avatarUrl": "",
+    "bids": Array [
+      Object {
+        "amount": 12,
+        "carTitle": "Toyota",
+        "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+        "id": "3",
+      },
+    ],
+    "email": "xyz2@gmail.com",
+    "firstname": "Grzegorz",
+    "hasPremium": true,
+    "id": "7",
+    "lastname": "Wylezek",
+    "phone": "665-555-555",
+  },
+  Object {
+    "avatarUrl": "",
+    "bids": Array [
+      Object {
+        "amount": 12,
+        "carTitle": "Toyota",
+        "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+        "id": "3",
+      },
+    ],
+    "email": "xyz2@gmail.com",
+    "firstname": "Grzegorz",
+    "hasPremium": true,
+    "id": "8",
+    "lastname": "Wylezek",
+    "phone": "665-555-555",
+  },
+  Object {
+    "avatarUrl": "",
+    "bids": Array [
+      Object {
+        "amount": 12,
+        "carTitle": "Toyota",
+        "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+        "id": "3",
+      },
+    ],
+    "email": "xyz2@gmail.com",
+    "firstname": "Grzegorz",
+    "hasPremium": true,
+    "id": "9",
+    "lastname": "Wylezek",
+    "phone": "665-555-555",
+  },
+  Object {
+    "avatarUrl": "",
+    "bids": Array [
+      Object {
+        "amount": 12,
+        "carTitle": "Toyota",
+        "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+        "id": "3",
+      },
+    ],
+    "email": "xyz2@gmail.com",
+    "firstname": "Grzegorz",
+    "hasPremium": true,
+    "id": "4322",
+    "lastname": "Wylezek",
+    "phone": "665-555-555",
+  },
+  Object {
+    "avatarUrl": "",
+    "bids": Array [
+      Object {
+        "amount": 12,
+        "carTitle": "Toyota",
+        "created": "Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)",
+        "id": "3",
+      },
+    ],
+    "email": "xyz2@gmail.com",
+    "firstname": "Grzegorz",
+    "hasPremium": true,
+    "id": "2432432",
+    "lastname": "Wylezek",
+    "phone": "665-555-555",
+  },
+]
+`;

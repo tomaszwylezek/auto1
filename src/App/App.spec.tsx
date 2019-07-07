@@ -12,7 +12,8 @@ describe('App component should', (): void => {
 
   beforeEach((): void => {
     props = {
-      getMerchants: jest.fn()
+      getMerchants: jest.fn(),
+      isLoading: false
     };
 
     component = shallow(<App {...props} />);
@@ -24,5 +25,10 @@ describe('App component should', (): void => {
 
   it('calls getMerchants onMount', (): void => {
     expect(props.getMerchants).toHaveBeenCalled();
+  });
+
+  it('calls getMerchants onMount', (): void => {
+    component.setProps({ isLoading: true });
+    expect(component.find('section').text()).toBe('Loading');
   });
 });

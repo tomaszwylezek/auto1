@@ -1,18 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component should render correctly 1`] = `
-<BrowserRouter>
+<main>
   <Nav />
-  <main
+  <section
     className="container py-4"
   >
     <Switch>
       <Route
+        component={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "WrappedComponent": [Function],
+            "compare": null,
+            "displayName": "Connect(MerchantList)",
+            "type": [Function],
+          }
+        }
+        exact={true}
         path="/"
-      >
-        <Component />
-      </Route>
+      />
+      <Route
+        component={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "WrappedComponent": [Function],
+            "compare": null,
+            "displayName": "Connect(MerchantAdd)",
+            "type": [Function],
+          }
+        }
+        path="/add"
+      />
+      <Route
+        component={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "WrappedComponent": [Function],
+            "compare": null,
+            "displayName": "Connect(MerchantEdit)",
+            "type": [Function],
+          }
+        }
+        path="/:id"
+      />
     </Switch>
-  </main>
-</BrowserRouter>
+  </section>
+</main>
 `;

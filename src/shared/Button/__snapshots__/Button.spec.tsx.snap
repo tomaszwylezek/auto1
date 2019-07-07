@@ -17,13 +17,3 @@ exports[`Button component should renders basic component 1`] = `
   Anything
 </button>
 `;
-
-exports[`Button component should renders with loading 1`] = `
-<button
-  className="btn btn-primary button primary loading"
-  disabled={true}
-  type="button"
->
-  Anything
-</button>
-`;

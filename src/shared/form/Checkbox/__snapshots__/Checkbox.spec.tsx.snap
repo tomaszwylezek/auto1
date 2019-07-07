@@ -18,41 +18,7 @@ exports[`Checkbox component should renders correctly 1`] = `
     className="custom-control-label"
     id="foo"
   >
-    <FormattedMessage
-      id="bar"
-    />
+    bar
   </Label>
-</div>
-`;
-
-exports[`Checkbox component should renders invalid message 1`] = `
-<div
-  className="custom-control custom-checkbox"
->
-  <input
-    checked=""
-    className="custom-control-input is-invalid"
-    id="foo"
-    name="foo"
-    onBlur={[MockFunction]}
-    onChange={[MockFunction]}
-    type="checkbox"
-    value=""
-  />
-  <Label
-    className="custom-control-label"
-    id="foo"
-  >
-    <FormattedMessage
-      id="bar"
-    />
-  </Label>
-  <div
-    className="invalid-feedback"
-  >
-    <FormattedMessage
-      id="core.error"
-    />
-  </div>
 </div>
 `;

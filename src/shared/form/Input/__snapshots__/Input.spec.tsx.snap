@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component should renders correctly 1`] = `
+<div
+  className="form-group"
+>
+  <Label
+    id="foo"
+  >
+    bar
+  </Label>
+  <input
+    className="form-control"
+    id="foo"
+    name="foo"
+    onBlur={[MockFunction]}
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+</div>
+`;

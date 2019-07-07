@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Merchants selectors should match snapshot for areMerchantsLoaded selector when merchant inside 1`] = `true`;
+
+exports[`Merchants selectors should match snapshot for areMerchantsLoaded selector when no merchant inside 1`] = `false`;
+
+exports[`Merchants selectors should match snapshot for getMerchant selector 1`] = `
+Object {
+  "id": "123",
+}
+`;
+
+exports[`Merchants selectors should match snapshot for getMerchants selector 1`] = `Array []`;
