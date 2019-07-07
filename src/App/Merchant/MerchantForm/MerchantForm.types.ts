@@ -7,4 +7,6 @@ export interface IMerchantFormOwnProps {
 
 export interface IMerchantFormProps extends IMerchantFormOwnProps {}
 
+type Omit<T, K extends keyof any> = Pick<T, Exclude<keyof T, K>>;
+
 export type IMerchantFormValues = Omit<IMerchant, 'bids' | 'id'>;
