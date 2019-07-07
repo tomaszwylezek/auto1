@@ -1,3 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MerchantDetails component should render correctly 1`] = `<div />`;
+exports[`MerchantDetails component should render correctly 1`] = `
+<div
+  className="card my-2"
+  key="123"
+>
+  <div
+    className="card-header"
+  >
+    <div
+      className="d-flex justify-content-between"
+    >
+      Foo Bar
+      <div>
+        <Button
+          theme="outline-secondary"
+          to="/123"
+        >
+          Edit
+        </Button>
+        <Button
+          onClick={[MockFunction]}
+          theme="danger"
+        >
+          Delete
+        </Button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="card-body"
+  >
+    123
+  </div>
+</div>
+`;
