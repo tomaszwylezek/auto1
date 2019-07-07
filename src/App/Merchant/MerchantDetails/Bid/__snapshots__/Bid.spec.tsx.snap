@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bid component should render correctly 1`] = `
+<div
+  className="card text-white bg-secondary mb-3 mr-2  bid"
+>
+  <div
+    className="card-header py-1 px-3"
+  >
+    3
+  </div>
+  <div
+    className="card-body p-3"
+  >
+    <h5
+      className="card-title"
+    >
+      Toyota
+       - 
+      12
+      $$
+    </h5>
+    <p
+      className="card-text"
+    >
+      Created: 
+      Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)
+    </p>
+  </div>
+</div>
+`;

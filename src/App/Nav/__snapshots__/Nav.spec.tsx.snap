@@ -6,7 +6,7 @@ exports[`Nav component should render correctly 1`] = `
 >
   <Link
     className="navbar-brand"
-    to="#"
+    to="/"
   >
     Auto1 - JS Coding test
   </Link>

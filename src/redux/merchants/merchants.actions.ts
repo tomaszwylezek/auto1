@@ -49,7 +49,7 @@ export const getMerchants = (): IAction<IMerchant[]> => ({
     },
     {
       id: '3',
-      firstname: 'Grzegorz',
+      firstname: 'Michal',
       lastname: 'Wylezek',
       avatarUrl: '',
       email: 'xyz2@gmail.com',
@@ -66,7 +66,7 @@ export const getMerchants = (): IAction<IMerchant[]> => ({
     },
     {
       id: '4',
-      firstname: 'Grzegorz',
+      firstname: 'Adam',
       lastname: 'Wylezek',
       avatarUrl: '',
       email: 'xyz2@gmail.com',
@@ -83,7 +83,7 @@ export const getMerchants = (): IAction<IMerchant[]> => ({
     },
     {
       id: '5',
-      firstname: 'Grzegorz',
+      firstname: 'Lajla',
       lastname: 'Wylezek',
       avatarUrl: '',
       email: 'xyz2@gmail.com',
@@ -100,7 +100,7 @@ export const getMerchants = (): IAction<IMerchant[]> => ({
     },
     {
       id: '6',
-      firstname: 'Grzegorz',
+      firstname: 'Lidia',
       lastname: 'Wylezek',
       avatarUrl: '',
       email: 'xyz2@gmail.com',
@@ -117,7 +117,7 @@ export const getMerchants = (): IAction<IMerchant[]> => ({
     },
     {
       id: '7',
-      firstname: 'Grzegorz',
+      firstname: 'Leokadia',
       lastname: 'Wylezek',
       avatarUrl: '',
       email: 'xyz2@gmail.com',
@@ -134,7 +134,7 @@ export const getMerchants = (): IAction<IMerchant[]> => ({
     },
     {
       id: '8',
-      firstname: 'Grzegorz',
+      firstname: 'Iwona',
       lastname: 'Wylezek',
       avatarUrl: '',
       email: 'xyz2@gmail.com',
@@ -168,7 +168,7 @@ export const getMerchants = (): IAction<IMerchant[]> => ({
     },
     {
       id: '4322',
-      firstname: 'Grzegorz',
+      firstname: 'Ania',
       lastname: 'Wylezek',
       avatarUrl: '',
       email: 'xyz2@gmail.com',
@@ -185,7 +185,7 @@ export const getMerchants = (): IAction<IMerchant[]> => ({
     },
     {
       id: '2432432',
-      firstname: 'Grzegorz',
+      firstname: 'Seba',
       lastname: 'Wylezek',
       avatarUrl: '',
       email: 'xyz2@gmail.com',

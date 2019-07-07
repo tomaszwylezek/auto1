@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MerchantForm component should change button text when merchant available: Edit 1`] = `
+<Button
+  disabled={true}
+  type="submit"
+>
+  Edit
+</Button>
+`;
+
+exports[`MerchantForm component should change button to not disable when valid form: Edit 1`] = `
+<Button
+  disabled={false}
+  type="submit"
+>
+  Add
+</Button>
+`;
+
+exports[`MerchantForm component should render correctly when no merchant 1`] = `
+<Form
+  className="row"
+>
+  <div
+    className="col-12"
+  >
+    <FormikConnect(FieldInner)
+      component={[Function]}
+      label="First name"
+      name="firstname"
+      required={true}
+    />
+  </div>
+  <div
+    className="col-12"
+  >
+    <FormikConnect(FieldInner)
+      component={[Function]}
+      label="Last name"
+      name="lastname"
+      required={true}
+    />
+  </div>
+  <div
+    className="col-12"
+  >
+    <FormikConnect(FieldInner)
+      component={[Function]}
+      label="Email"
+      name="email"
+      required={true}
+    />
+  </div>
+  <div
+    className="col-12"
+  >
+    <FormikConnect(FieldInner)
+      component={[Function]}
+      label="Avatar Url"
+      name="avatarUrl"
+    />
+  </div>
+  <div
+    className="col-12"
+  >
+    <FormikConnect(FieldInner)
+      component={[Function]}
+      label="Phone"
+      name="phone"
+    />
+  </div>
+  <div
+    className="col-12"
+  >
+    <FormikConnect(FieldInner)
+      component={[Function]}
+      label="Has premium"
+      name="hasPremium"
+    />
+  </div>
+  <div
+    className="col-12"
+  >
+    <Button
+      disabled={true}
+      type="submit"
+    >
+      Add
+    </Button>
+  </div>
+</Form>
+`;

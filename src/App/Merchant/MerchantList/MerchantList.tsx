@@ -11,12 +11,17 @@ import { MerchantDetails } from 'App/Merchant/MerchantDetails/MerchantDetails';
 const PER_PAGE: number = 5;
 
 export const MerchantList: FC<IMerchantListProps> = ({ merchants, deleteMerchant }): JSX.Element => {
-  const [page, setPage] = useState<number>(1);
+  const [page, setPaginationPage] = useState<number>(1);
+
+  const setPage = (page: number) => {
+    setPaginationPage(page);
+    window.scrollTo(0, 0);
+  };
 
   const currentMerchants: IMerchant[] = merchants.slice((page - 1) * PER_PAGE, page * PER_PAGE);
 
   return (
-    <div>
+    <section>
       <Button theme={ButtonTheme.success} to="/add">
         Add
       </Button>
@@ -29,6 +34,7 @@ export const MerchantList: FC<IMerchantListProps> = ({ merchants, deleteMerchant
               key={merchant.id}
               id={merchant.id}
               name={name}
+              bids={merchant.bids}
               phone={merchant.phone}
               onDeleteClick={deleteSpecificMerchant}
             />
@@ -52,6 +58,7 @@ export const MerchantList: FC<IMerchantListProps> = ({ merchants, deleteMerchant
                 </span>
               </li>
             ))}
+
           <li className="page-item">
             <span
               className="page-link"
@@ -62,6 +69,6 @@ export const MerchantList: FC<IMerchantListProps> = ({ merchants, deleteMerchant
           </li>
         </ul>
       </nav>
-    </div>
+    </section>
   );
 };

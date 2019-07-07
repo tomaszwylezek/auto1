@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MerchantList component should render correctly 1`] = `
+<section>
+  <Button
+    theme="success"
+    to="/add"
+  >
+    Add
+  </Button>
+  <nav
+    className="d-flex justify-content-center"
+  >
+    <ul
+      className="pagination pagination"
+    >
+      <li
+        className="page-item"
+      >
+        <span
+          className="page-link"
+          onClick={[Function]}
+        >
+          Previous
+        </span>
+      </li>
+      <li
+        className="page-item"
+      >
+        <span
+          className="page-link"
+          onClick={[Function]}
+        >
+          Next
+        </span>
+      </li>
+    </ul>
+  </nav>
+</section>
+`;
+
+exports[`MerchantList component should render correctly with merchants 1`] = `
+<section>
+  <Button
+    theme="success"
+    to="/add"
+  >
+    Add
+  </Button>
+  <MerchantDetails
+    id="123"
+    key="123"
+    name="foo bar"
+    onDeleteClick={[Function]}
+  />
+  <MerchantDetails
+    id="1234"
+    key="1234"
+    name="foo bar"
+    onDeleteClick={[Function]}
+  />
+  <MerchantDetails
+    id="122333"
+    key="122333"
+    name="foo bar"
+    onDeleteClick={[Function]}
+  />
+  <MerchantDetails
+    id="12424134"
+    key="12424134"
+    name="foo bar"
+    onDeleteClick={[Function]}
+  />
+  <MerchantDetails
+    id="125323"
+    key="125323"
+    name="foo bar"
+    onDeleteClick={[Function]}
+  />
+  <nav
+    className="d-flex justify-content-center"
+  >
+    <ul
+      className="pagination pagination"
+    >
+      <li
+        className="page-item"
+      >
+        <span
+          className="page-link"
+          onClick={[Function]}
+        >
+          Previous
+        </span>
+      </li>
+      <li
+        className="page-item"
+        key="0"
+      >
+        <span
+          className="page-link"
+          onClick={[Function]}
+        >
+          1
+        </span>
+      </li>
+      <li
+        className="page-item"
+        key="1"
+      >
+        <span
+          className="page-link"
+          onClick={[Function]}
+        >
+          2
+        </span>
+      </li>
+      <li
+        className="page-item"
+      >
+        <span
+          className="page-link"
+          onClick={[Function]}
+        >
+          Next
+        </span>
+      </li>
+    </ul>
+  </nav>
+</section>
+`;

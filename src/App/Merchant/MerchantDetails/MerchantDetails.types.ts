@@ -1,8 +1,11 @@
+import { IBid } from 'model';
+
 export interface IMerchantDetailsOwnProps {
   id: string;
   name: string;
   phone?: string;
   onDeleteClick: () => void;
+  bids: IBid[];
 }
 
 export interface IMerchantDetailsConnectedState {}

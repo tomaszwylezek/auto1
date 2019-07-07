@@ -6,7 +6,7 @@ exports[`MerchantDetails component should render correctly 1`] = `
   key="123"
 >
   <div
-    className="card-header"
+    className="card-header py-1 px-3"
   >
     <div
       className="d-flex justify-content-between"
@@ -14,6 +14,8 @@ exports[`MerchantDetails component should render correctly 1`] = `
       Foo Bar
       <div>
         <Button
+          className="mr-2"
+          size="sm"
           theme="outline-secondary"
           to="/123"
         >
@@ -21,6 +23,7 @@ exports[`MerchantDetails component should render correctly 1`] = `
         </Button>
         <Button
           onClick={[MockFunction]}
+          size="sm"
           theme="danger"
         >
           Delete
@@ -29,9 +32,23 @@ exports[`MerchantDetails component should render correctly 1`] = `
     </div>
   </div>
   <div
-    className="card-body"
+    className="card-body p-2"
   >
-    123
+    <div>
+      Contact: 
+      123
+    </div>
+    <div
+      className="d-flex"
+    >
+      <Bid
+        amount={12}
+        carTitle="Toyota"
+        created="Sat Jul 06 2019 10:31:54 GMT+0200 (Central European Summer Time)"
+        id="3"
+        key="3"
+      />
+    </div>
   </div>
 </div>
 `;

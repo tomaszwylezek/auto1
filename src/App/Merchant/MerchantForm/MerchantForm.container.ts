@@ -1,10 +1,10 @@
 import * as Yup from 'yup';
+import { compose } from 'redux';
+import { FormikBag, withFormik } from 'formik';
 import { MerchantForm } from './MerchantForm';
 
-import { FormikBag, withFormik } from 'formik';
-import { IMerchantFormProps, IMerchantFormValues } from 'App/Merchant/MerchantForm/MerchantForm.types';
 import { IMerchant } from 'model';
-import { compose } from 'redux';
+import { IMerchantFormProps, IMerchantFormValues } from 'App/Merchant/MerchantForm/MerchantForm.types';
 
 const initialFormValues: IMerchantFormValues = {
   firstname: '',

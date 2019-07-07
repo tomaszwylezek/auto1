@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MerchantAdd component should render correctly 1`] = `
+<section>
+  <Button
+    theme="outline-info"
+    to="/"
+  >
+    Back
+  </Button>
+  <h2>
+    Add merchant
+  </h2>
+  <WithFormik(MerchantForm)
+    onSubmit={[Function]}
+  />
+</section>
+`;

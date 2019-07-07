@@ -1,17 +1,23 @@
 import React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 
-import { MerchantEdit } from './MerchantAdd';
+import { MerchantEdit } from './MerchantEdit';
+import { getMockedRouterProps } from 'testUtils/router';
 
 // Models
-import { IMerchantAddProps, IMerchantAddState } from './MerchantAdd.types';
+import { IMerchantEditProps } from './MerchantEdit.types';
+import { IMerchant } from 'model';
 
-describe('MerchantAdd component should', (): void => {
-  let props: IMerchantAddProps;
-  let component: ShallowWrapper<IMerchantAddProps, IMerchantAddState>;
+describe('MerchantEdit component should', (): void => {
+  let props: IMerchantEditProps;
+  let component: ShallowWrapper<IMerchantEditProps>;
 
   beforeEach((): void => {
-    props = {};
+    props = {
+      editMerchant: jest.fn(),
+      merchant: {} as IMerchant,
+      ...getMockedRouterProps()
+    };
 
     component = shallow(<MerchantEdit {...props} />);
   });

@@ -1,5 +1,4 @@
 import { IMerchant } from 'model';
-import { FormikProps } from 'formik';
 
 export interface IMerchantFormOwnProps {
   onSubmit: (values: any) => void;

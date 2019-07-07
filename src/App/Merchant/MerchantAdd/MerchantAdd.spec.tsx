@@ -4,22 +4,23 @@ import { shallow, ShallowWrapper } from 'enzyme';
 import { MerchantAdd } from './MerchantAdd';
 
 // Models
-import { IMerchantAddProps, IMerchantAddState } from './MerchantAdd.types';
+import { IMerchantAddProps } from './MerchantAdd.types';
+import { getMockedRouterProps } from 'testUtils/router';
 
 describe('MerchantAdd component should', (): void => {
- let props: IMerchantAddProps;
- let component: ShallowWrapper<IMerchantAddProps, IMerchantAddState>;
+  let props: IMerchantAddProps;
+  let component: ShallowWrapper<IMerchantAddProps>;
 
-  beforeEach(
-    (): void => {
-      props = {}
+  beforeEach((): void => {
+    props = {
+      addMerchant: jest.fn(),
+      ...getMockedRouterProps()
+    };
 
-      component = shallow(<MerchantAdd {...props} />)
-    }
-  );
+    component = shallow(<MerchantAdd {...props} />);
+  });
 
- it('render correctly', (): void => {
+  it('render correctly', (): void => {
     expect(component).toMatchSnapshot();
- });
+  });
 });
-
