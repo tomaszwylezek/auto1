@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import uuidv4 from 'uuid/v4';
 
 // Models
 import { IMerchantEditProps } from './MerchantEdit.types';
@@ -14,8 +13,7 @@ export const MerchantEdit: FC<IMerchantEditProps> = ({ merchant, editMerchant, h
       onSubmit={(values: IMerchantFormValues) => {
         Promise.resolve(
           editMerchant({
-            id: uuidv4(),
-            bids: [],
+            ...merchant,
             ...values
           })
         ).then(() => {

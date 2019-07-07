@@ -6,7 +6,8 @@ import { Checkbox } from 'shared/form/Checkbox/Checkbox';
 
 // Models
 
-export const MerchantForm: FC<IMerchantFormProps & FormikProps<IMerchantFormValues>> = () => {
+export const MerchantForm: FC<IMerchantFormProps & FormikProps<IMerchantFormValues>> = ({ merchant }) => {
+  const isEdit: boolean = !!merchant;
   return (
     <Form className="row">
       <div className="col-12">
@@ -29,6 +30,7 @@ export const MerchantForm: FC<IMerchantFormProps & FormikProps<IMerchantFormValu
       </div>
       <div className="col-12">
         <button type="submit">XD</button>
+        {isEdit && <button type="submit">usun</button>}
       </div>
     </Form>
   );

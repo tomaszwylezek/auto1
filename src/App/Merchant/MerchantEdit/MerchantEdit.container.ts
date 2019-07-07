@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { addMerchant } from 'redux/merchants/merchants.actions';
+import { editMerchant } from 'redux/merchants/merchants.actions';
 import { MerchantEdit } from './MerchantEdit';
 
 import { getMerchant } from 'redux/merchants/merchants.selector';
@@ -21,7 +21,7 @@ const mapStateToProps = (
 });
 
 const mapDispatchToProps: IMerchantEditConnectedActions = {
-  editMerchant: addMerchant
+  editMerchant
 };
 
 export const MerchantEditContainer = connect(

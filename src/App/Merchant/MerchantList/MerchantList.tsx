@@ -13,7 +13,16 @@ export const MerchantList: FC<IMerchantListProps> = ({ merchants }) => {
           const name: string = `${merchant.firstname} ${merchant.lastname}`;
           return (
             <div className="card" key={merchant.id}>
-              <div className="card-header">{name}</div>
+              <div className="card-header">
+                <div className="d-flex justify-content-between">
+                  {name}
+
+                  <div>
+                    <Link to={`/${merchant.id}`}>Edit</Link>
+                    <button>Delete</button>
+                  </div>
+                </div>
+              </div>
               <div className="card-body">{merchant.phone}</div>
             </div>
           );
