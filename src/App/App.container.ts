@@ -1,14 +1,18 @@
 import { connect } from 'react-redux';
-import { getMerchants } from 'redux/merchants/merchants.actions';
 
 import { App } from './App';
 
 import { IAppConnectedActions, IAppConnectedState } from './App.types';
+import { IStoreState } from 'model';
+import { getMerchants as fetchMerchants } from 'redux/merchants/merchants.actions';
+import { areMerchantsLoaded } from 'redux/merchants/merchants.selector';
 
-const mapStateToProps = (state): IAppConnectedState => ({});
+const mapStateToProps = (state: IStoreState): IAppConnectedState => ({
+  isLoading: !areMerchantsLoaded(state)
+});
 
 const mapDispatchToProps: IAppConnectedActions = {
-  getMerchants
+  getMerchants: fetchMerchants
 };
 
 export const AppContainer = connect(

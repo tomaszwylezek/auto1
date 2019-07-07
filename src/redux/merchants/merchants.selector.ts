@@ -12,3 +12,8 @@ export const getMerchant = createSelector<IStoreState, string, IMerchant[], stri
   (merchants: IMerchant[], id: string): IMerchant =>
     merchants.find(({ id: merchantId }: IMerchant) => id === merchantId)
 );
+
+export const areMerchantsLoaded = createSelector<IStoreState, IMerchant[], boolean>(
+  [getMerchants],
+  (merchants: IMerchant[]): boolean => merchants.length > 0
+);

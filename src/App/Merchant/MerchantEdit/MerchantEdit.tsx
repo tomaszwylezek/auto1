@@ -8,11 +8,6 @@ import { IMerchantFormValues } from 'App/Merchant/MerchantForm/MerchantForm.type
 import { MerchantFormContainer } from 'App/Merchant/MerchantForm/MerchantForm.container';
 
 export const MerchantEdit: FC<IMerchantEditProps> = ({ merchant, editMerchant, history: { push } }) => {
-  console.log({ merchant });
-
-  if (!merchant) {
-    return null;
-  }
   return (
     <MerchantFormContainer
       merchant={merchant}

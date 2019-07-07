@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import { Nav } from 'App/Nav/Nav';
 
@@ -14,18 +14,22 @@ export class App extends Component<IAppProps> {
     this.props.getMerchants();
   }
 
+  getContent(): JSX.Element {
+    return (
+      <Switch>
+        <Route exact path="/" component={MerchantListContainer} />
+        <Route path="/add" component={MerchantAddContainer} />
+        <Route path="/:id" component={MerchantEditContainer} />
+      </Switch>
+    );
+  }
+
   render(): JSX.Element {
     return (
-      <Router>
+      <main>
         <Nav />
-        <main className="container py-4">
-          <Switch>
-            <Route exact path="/" component={MerchantListContainer} />
-            <Route path="/add" component={MerchantAddContainer} />
-            <Route path="/:id" component={MerchantEditContainer} />
-          </Switch>
-        </main>
-      </Router>
+        <section className="container py-4">{this.props.isLoading ? 'Loading' : this.getContent()}</section>
+      </main>
     );
   }
 }

@@ -1,6 +1,8 @@
 export interface IAppOwnProps {}
 
-export interface IAppConnectedState {}
+export interface IAppConnectedState {
+  isLoading: boolean;
+}
 
 export interface IAppConnectedActions {
   getMerchants: () => void;
