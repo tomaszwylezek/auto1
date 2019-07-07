@@ -1,4 +1,9 @@
-export interface IMerchantDetailsOwnProps {}
+export interface IMerchantDetailsOwnProps {
+  id: string;
+  name: string;
+  phone?: string;
+  onDeleteClick: () => void;
+}
 
 export interface IMerchantDetailsConnectedState {}
 

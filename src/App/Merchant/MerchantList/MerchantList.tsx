@@ -5,14 +5,16 @@ import { ButtonTheme, IMerchant } from 'model';
 import { Button } from 'shared/Button/Button';
 
 import styles from './MerchantList.module.scss';
+import { MerchantDetails } from 'App/Merchant/MerchantDetails/MerchantDetails';
 // Models
 
 const PER_PAGE: number = 5;
 
-export const MerchantList: FC<IMerchantListProps> = ({ merchants, deleteMerchant }) => {
+export const MerchantList: FC<IMerchantListProps> = ({ merchants, deleteMerchant }): JSX.Element => {
   const [page, setPage] = useState<number>(1);
 
   const currentMerchants: IMerchant[] = merchants.slice((page - 1) * PER_PAGE, page * PER_PAGE);
+
   return (
     <div>
       <Button theme={ButtonTheme.success} to="/add">
@@ -23,23 +25,13 @@ export const MerchantList: FC<IMerchantListProps> = ({ merchants, deleteMerchant
           const name: string = `${merchant.firstname} ${merchant.lastname}`;
           const deleteSpecificMerchant: () => void = () => deleteMerchant(merchant.id);
           return (
-            <div className="card my-2" key={merchant.id}>
-              <div className="card-header">
-                <div className="d-flex justify-content-between">
-                  {name}
-
-                  <div>
-                    <Button theme={ButtonTheme.outlineSecondary} to={`/${merchant.id}`}>
-                      Edit
-                    </Button>
-                    <Button theme={ButtonTheme.danger} onClick={deleteSpecificMerchant}>
-                      Delete
-                    </Button>
-                  </div>
-                </div>
-              </div>
-              <div className="card-body">{merchant.phone}</div>
-            </div>
+            <MerchantDetails
+              key={merchant.id}
+              id={merchant.id}
+              name={name}
+              phone={merchant.phone}
+              onDeleteClick={deleteSpecificMerchant}
+            />
           );
         }
       )}
