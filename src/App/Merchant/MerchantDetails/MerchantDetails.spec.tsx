@@ -4,8 +4,8 @@ import { shallow, ShallowWrapper } from 'enzyme';
 import { MerchantDetails } from './MerchantDetails';
 
 // Models
-import { IMerchantDetailsProps, IMerchantDetailsState } from './MerchantDetails.types';
 import { ButtonTheme } from 'model';
+import { IMerchantDetailsProps, IMerchantDetailsState } from './MerchantDetails.types';
 
 describe('MerchantDetails component should', (): void => {
   let props: IMerchantDetailsProps;

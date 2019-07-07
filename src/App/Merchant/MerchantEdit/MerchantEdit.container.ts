@@ -1,8 +1,12 @@
 import { connect } from 'react-redux';
-import { editMerchant } from 'redux/merchants/merchants.actions';
+
 import { MerchantEdit } from './MerchantEdit';
 
+// Redux
+import { editMerchant } from 'redux/merchants/merchants.actions';
 import { getMerchant } from 'redux/merchants/merchants.selector';
+
+// Models
 import {
   IMerchantEditConnectedActions,
   IMerchantEditConnectedState,

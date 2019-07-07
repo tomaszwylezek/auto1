@@ -3,6 +3,7 @@ import { compose } from 'redux';
 import { FormikBag, withFormik } from 'formik';
 import { MerchantForm } from './MerchantForm';
 
+// Models
 import { IMerchant } from 'model';
 import { IMerchantFormProps, IMerchantFormValues } from 'App/Merchant/MerchantForm/MerchantForm.types';
 

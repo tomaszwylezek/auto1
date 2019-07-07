@@ -1,11 +1,13 @@
 import React, { FC } from 'react';
-// Models
-import { IMerchantEditProps } from './MerchantEdit.types';
 
-import { IMerchantFormValues } from 'App/Merchant/MerchantForm/MerchantForm.types';
+// Features
 import { MerchantFormContainer } from 'App/Merchant/MerchantForm/MerchantForm.container';
 import { Button } from 'shared/Button/Button';
+
+// Models
 import { ButtonTheme } from 'model';
+import { IMerchantEditProps } from './MerchantEdit.types';
+import { IMerchantFormValues } from 'App/Merchant/MerchantForm/MerchantForm.types';
 
 export const MerchantEdit: FC<IMerchantEditProps> = ({ merchant, editMerchant, history: { push } }) => {
   return (

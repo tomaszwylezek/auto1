@@ -1,13 +1,14 @@
 import React, { FC } from 'react';
 import uuidv4 from 'uuid/v4';
 
-// Models
-import { IMerchantAddProps } from './MerchantAdd.types';
-
-import { IMerchantFormValues } from 'App/Merchant/MerchantForm/MerchantForm.types';
+// Features
 import { MerchantFormContainer } from 'App/Merchant/MerchantForm/MerchantForm.container';
 import { Button } from 'shared/Button/Button';
+
+// Models
 import { ButtonTheme } from 'model';
+import { IMerchantAddProps } from './MerchantAdd.types';
+import { IMerchantFormValues } from 'App/Merchant/MerchantForm/MerchantForm.types';
 
 const generateBid = () =>
   Array(Math.floor(Math.random() * 3 + 1))

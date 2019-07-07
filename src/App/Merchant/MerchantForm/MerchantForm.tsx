@@ -1,11 +1,12 @@
 import React, { FC } from 'react';
-import { IMerchantFormProps, IMerchantFormValues } from 'App/Merchant/MerchantForm/MerchantForm.types';
 import { Field, Form, FormikProps } from 'formik';
+
 import { Input } from 'shared/form/Input/Input';
 import { Checkbox } from 'shared/form/Checkbox/Checkbox';
 import { Button } from 'shared/Button/Button';
 
 // Models
+import { IMerchantFormProps, IMerchantFormValues } from 'App/Merchant/MerchantForm/MerchantForm.types';
 
 export const MerchantForm: FC<IMerchantFormProps & FormikProps<IMerchantFormValues>> = ({
   merchant,
